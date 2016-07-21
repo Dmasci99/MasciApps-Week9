@@ -6,14 +6,10 @@ using System.Web;
 namespace MasciApps_Week9.Models
 {
     public class Genre
-    {
-        private string v;
-
-        public Genre(string Name)
-        {
-            this.Name = Name;
-        }
-
+    {        
+        public int GenreId { get; set; }
         public string Name { get; set; }
+        public string Description { get; set; }
+        public List<Album> Albums { get; set; }
     }
 }
